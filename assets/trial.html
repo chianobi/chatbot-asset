@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+        <title>
+          Trying this out
+        </title>
+
+        <script>
+            window.dexterSettings= {
+                 logoIcon: 'file:///android_asset/logo.png'
+                , hideDefaultLauncher: true
+                , openIcon: 'file:///android_asset/logo.png'
+                , onLoad: function (api) {
+                    api.open();
+                    api.replyTo("hello");
+                }
+            }
+
+        </script>
+
+        <script>
+            var i=document.createElement('iframe');i.style.width=0;i.style.height=0;
+            i.style.display='none';i.src='javascript:false',i.botId='1fcf1433-e6b8-4b2f-b7a3-42ab03a37e6c',
+            i.botTitle='Single Client Helper',i.baseUrl='https://bots.rundexter.com';
+            var d=document.getElementsByTagName('script');d=d[d.length-1],d.parentNode.insertBefore(i,d);
+            var o=i.contentWindow.document;o.open()._l=function(){var e=this.createElement('script');
+            e.src='file:///android_asset/styleScript.js',this.body.appendChild(e)},
+            o.write('<body onload="document._l();">'),o.close();
+        </script>
+
+        <style>
+            div {
+                padding:20px 20px 20px 20px;
+            }
+            h1 {text-align:center;}
+            p {text-align:center;}
+        </style>
+
+   </head>
+
+   <body>
+   <div>
+       <h1> Practice View </h1>
+   </div>
+
+    <div>
+        <p>
+            If the chat does not appear, you may need to enable Wi-Fi or Data connectivity. <br>
+            You may easily navigate through topics using the
+            quick reply buttons in the chat!
+        </p>
+    </div>
+
+
+   </body>
+</html>
